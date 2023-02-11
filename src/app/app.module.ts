@@ -7,7 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContentAreaComponent } from './components/content-area/content-area.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule } from "@angular/material/table";
+import { MaterialModule } from './material.module';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { MatTableModule } from "@angular/material/table";
     BrowserModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatTableModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

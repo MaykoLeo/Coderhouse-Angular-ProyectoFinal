@@ -1,17 +1,1 @@
-.listaEstudiantes {
-    list-style: none;
-}
-
-
-.activo {
-    color: blue;
-}
-
-.inactivo {
-    color: gray;
-}
-
-.botonActivarEstado {
-    background-color: bisque;
-    margin-left: 5rem;
-}
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';

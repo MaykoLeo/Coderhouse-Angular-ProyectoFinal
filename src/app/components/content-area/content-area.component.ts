@@ -28,5 +28,5 @@ export class ContentAreaComponent {
     },
   ];
   dataSource: MatTableDataSource<Curso> = new MatTableDataSource<Curso>(this.cursos)
-  columnas: string[] = ['nombre', 'comision', 'profesor']
+  columnas: string[] = ['nombre', 'comision', 'profesor', 'acciones']
 }
