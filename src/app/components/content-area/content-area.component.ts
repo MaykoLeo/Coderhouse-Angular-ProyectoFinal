@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Curso } from 'src/app/models/curso';
+import { Alumno } from 'src/app/models/alumno';
+
 
 
 @Component({
@@ -10,23 +11,23 @@ import { Curso } from 'src/app/models/curso';
 })
 
 export class ContentAreaComponent {
-  cursos: Curso[] = [
+  alumnos: Alumno[] = [
     {
-      nombre: 'React', comision: '2378', profesor: 'Jose'
+      nombre: 'Jose', curso: 'React', comision: '2378'
     },
     {
-      nombre: 'Angular', comision: '3354', profesor: 'Luis'
+      nombre: 'Luis', curso: 'Angular', comision: '3354'
     },
     {
-      nombre: 'Vue', comision: '3951', profesor: 'Mario'
+      nombre: 'Mario', curso: 'Vue', comision: '3951'
     },
     {
-      nombre: 'Javascript', comision: '1984', profesor: 'Alberto'
+      nombre: 'Alberto', curso: 'Javascript', comision: '1984'
     },
     {
-      nombre: 'NodeJS', comision: '3864', profesor: 'Juan'
+      nombre: 'Juan', curso: 'NodeJS', comision: '3864'
     },
   ];
-  dataSource: MatTableDataSource<Curso> = new MatTableDataSource<Curso>(this.cursos)
-  columnas: string[] = ['nombre', 'comision', 'profesor', 'acciones']
+  dataSource: MatTableDataSource<Alumno> = new MatTableDataSource<Alumno>(this.alumnos)
+  columnas: string[] = ['nombre', 'curso', 'comision', 'acciones']
 }
