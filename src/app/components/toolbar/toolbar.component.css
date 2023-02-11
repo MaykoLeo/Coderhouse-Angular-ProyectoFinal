@@ -1,0 +1,8 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    background-color: gray;
+
+    justify-content: center;
+}

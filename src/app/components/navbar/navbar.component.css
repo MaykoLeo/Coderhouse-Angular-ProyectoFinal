@@ -1,0 +1,7 @@
+.navbar-nav {
+    flex-direction: column;
+}
+
+.navbar-nav .nav-link {
+    padding: .5rem 1rem;
+}
