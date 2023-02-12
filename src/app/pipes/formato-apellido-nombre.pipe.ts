@@ -1,6 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Alumno } from '../models/alumno';
-import { usuario } from '../models/usuario';
 
 
 @Pipe({

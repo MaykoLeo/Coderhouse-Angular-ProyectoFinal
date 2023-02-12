@@ -12,6 +12,7 @@ import { EditarAlumnoModalComponent } from './components/editar-alumno-modal/edi
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe';
 import { BooleanoATextoPipe } from './pipes/booleano-a-texto.pipe';
+import { LetraTamanioDirective } from './directives/letra-tamanio.directive';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { BooleanoATextoPipe } from './pipes/booleano-a-texto.pipe';
     EditarAlumnoModalComponent,
     FormatoApellidoNombrePipe,
     BooleanoATextoPipe,
+    LetraTamanioDirective,
   ],
   imports: [
     BrowserModule,
