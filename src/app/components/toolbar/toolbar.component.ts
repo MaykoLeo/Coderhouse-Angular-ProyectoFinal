@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent {
-  titulo: string = "Lista de Alumnos con interpolación"
+  titulo: string = "Lista de Alumnos"
 }

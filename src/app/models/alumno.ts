@@ -1,5 +1,6 @@
+import { usuario } from './usuario';
 export interface Alumno {
-    nombre: string;
+    alumno: usuario;
     curso: string,
     comision: string;
 }

@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { EditarAlumnoModalComponent } from './components/editar-alumno-modal/editar-alumno-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     ContentAreaComponent,
     EditarAlumnoModalComponent,
+    FormatoApellidoNombrePipe,
   ],
   imports: [
     BrowserModule,

@@ -15,23 +15,64 @@ import { EditarAlumnoModalComponent } from '../editar-alumno-modal/editar-alumno
 export class ContentAreaComponent {
   alumnos: Alumno[] = [
     {
-      nombre: 'Jose', curso: 'React', comision: '2378'
+      alumno: {
+        nombre: 'Jose',
+        apellido: 'Paez',
+        correo: 'jose@gmail.com',
+        estado: true,
+        fechaRegistro: new Date(2022, 6, 3),
+      },
+      curso: 'React',
+      comision: '2378'
     },
     {
-      nombre: 'Luis', curso: 'Angular', comision: '3354'
+      alumno: {
+        nombre: 'Luis',
+        apellido: 'Fernandez',
+        correo: 'Luis@gmail.com',
+        estado: true,
+        fechaRegistro: new Date(2023, 0, 28),
+      },
+      curso: 'Angular',
+      comision: '3354'
     },
     {
-      nombre: 'Mario', curso: 'Vue', comision: '3951'
+      alumno: {
+        nombre: 'Mario',
+        apellido: 'Ramos',
+        correo: 'Mario@gmail.com',
+        estado: false,
+        fechaRegistro: new Date(2021, 10, 16),
+      },
+      curso: 'Vue',
+      comision: '3951'
     },
     {
-      nombre: 'Alberto', curso: 'Javascript', comision: '1984'
+      alumno: {
+        nombre: 'Alberto',
+        apellido: 'Diaz',
+        correo: 'Alberto@gmail.com',
+        estado: false,
+        fechaRegistro: new Date(2022, 8, 2),
+      },
+      curso: 'Javascript',
+      comision: '1984'
     },
     {
-      nombre: 'Juan', curso: 'NodeJS', comision: '3864'
+      alumno: {
+        nombre: 'Juan',
+        apellido: 'Merlo',
+        correo: 'Juan@gmail.com',
+        estado: true,
+        fechaRegistro: new Date(2022, 11, 24),
+      },
+      curso: 'Javascript',
+      comision: '3864'
     },
+
   ];
   dataSource: MatTableDataSource<Alumno> = new MatTableDataSource<Alumno>(this.alumnos)
-  columnas: string[] = ['nombre', 'curso', 'comision', 'acciones']
+  columnas: string[] = ['nombre', 'curso', 'comision', 'estado', 'acciones']
 
   constructor(
     private dialog: MatDialog
