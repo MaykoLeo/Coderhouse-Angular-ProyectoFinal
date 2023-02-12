@@ -8,6 +8,8 @@ import { ContentAreaComponent } from './components/content-area/content-area.com
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { EditarAlumnoModalComponent } from './components/editar-alumno-modal/editar-alumno-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,13 +17,15 @@ import { MaterialModule } from './material.module';
     AppComponent,
     ToolbarComponent,
     NavbarComponent,
-    ContentAreaComponent
+    ContentAreaComponent,
+    EditarAlumnoModalComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
