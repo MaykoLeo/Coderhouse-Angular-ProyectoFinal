@@ -5,10 +5,16 @@
             <input type="text" placeholder="Nombre" formControlName="nombre">
         </div>
         <div class="row">
+            <input type="text" placeholder="Apellido" formControlName="apellido">
+        </div>
+        <div class="row">
             <input type="text" placeholder="Curso" formControlName="curso">
         </div>
         <div class="row">
             <input type="text" placeholder="Comision" formControlName="comision">
+        </div>
+        <div class='row'>
+            <p>{{ data.alumno.estado | booleanoATexto: 'Estado: Activo': 'Estado: Inactivo'}}</p>
         </div>
     </form>
 </div>

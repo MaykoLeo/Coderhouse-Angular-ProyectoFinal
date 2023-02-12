@@ -11,6 +11,7 @@ import { MaterialModule } from './material.module';
 import { EditarAlumnoModalComponent } from './components/editar-alumno-modal/editar-alumno-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe';
+import { BooleanoATextoPipe } from './pipes/booleano-a-texto.pipe';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe'
     ContentAreaComponent,
     EditarAlumnoModalComponent,
     FormatoApellidoNombrePipe,
+    BooleanoATextoPipe,
   ],
   imports: [
     BrowserModule,

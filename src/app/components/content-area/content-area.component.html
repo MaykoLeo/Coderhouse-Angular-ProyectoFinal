@@ -19,7 +19,7 @@
 
     <ng-container matColumnDef="estado">
         <th mat-header-cell *matHeaderCellDef>Estado</th>
-        <td mat-cell *matCellDef="let element">{{ element.alumno.estado }}</td>
+        <td mat-cell *matCellDef="let element">{{ element.alumno.estado | booleanoATexto: 'Activo': 'Inactivo' }}</td>
     </ng-container>
 
 
