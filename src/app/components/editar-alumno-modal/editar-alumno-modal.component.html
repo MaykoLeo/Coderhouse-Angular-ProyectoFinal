@@ -14,7 +14,8 @@
             <input type="text" placeholder="Comision" formControlName="comision">
         </div>
         <div class='row'>
-            <p>{{ data.alumno.estado | booleanoATexto: 'Estado: Activo': 'Estado: Inactivo'}}</p>
+            <p [appEstadoEstilo]="data.alumno.estado">{{ data.alumno.estado | booleanoATexto: 'Estado: Activo':
+                'Estado: Inactivo'}}</p>
         </div>
     </form>
 </div>

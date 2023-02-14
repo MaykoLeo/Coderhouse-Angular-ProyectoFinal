@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe';
 import { BooleanoATextoPipe } from './pipes/booleano-a-texto.pipe';
 import { LetraTamanioDirective } from './directives/letra-tamanio.directive';
+import { EstadoEstiloDirective } from './directives/estado-estilo.directive';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { LetraTamanioDirective } from './directives/letra-tamanio.directive';
     FormatoApellidoNombrePipe,
     BooleanoATextoPipe,
     LetraTamanioDirective,
+    EstadoEstiloDirective,
   ],
   imports: [
     BrowserModule,

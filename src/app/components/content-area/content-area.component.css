@@ -1,2 +1,6 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 /* se hace el import del tema en específico para que Bootstrap no superponga los estilos de Material */
+
+.cabecera {
+    text-align: center;
+}
