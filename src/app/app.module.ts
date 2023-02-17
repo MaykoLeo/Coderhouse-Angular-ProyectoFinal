@@ -9,11 +9,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { EditarAlumnoModalComponent } from './components/editar-alumno-modal/editar-alumno-modal.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormatoApellidoNombrePipe } from './pipes/formato-apellido-nombre.pipe';
 import { BooleanoATextoPipe } from './pipes/booleano-a-texto.pipe';
 import { LetraTamanioDirective } from './directives/letra-tamanio.directive';
 import { EstadoEstiloDirective } from './directives/estado-estilo.directive';
+import { BuscarAlumnoPipe } from './pipes/buscar-alumno.pipe';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { EstadoEstiloDirective } from './directives/estado-estilo.directive';
     BooleanoATextoPipe,
     LetraTamanioDirective,
     EstadoEstiloDirective,
+    BuscarAlumnoPipe,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { EstadoEstiloDirective } from './directives/estado-estilo.directive';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

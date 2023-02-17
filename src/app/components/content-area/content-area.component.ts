@@ -3,6 +3,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Alumno } from 'src/app/models/alumno';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { EditarAlumnoModalComponent } from '../editar-alumno-modal/editar-alumno-modal.component';
+import { BuscarAlumnoPipe } from "src/app/pipes/buscar-alumno.pipe";
+import { usuario } from '../../models/usuario';
 
 
 
@@ -13,6 +15,7 @@ import { EditarAlumnoModalComponent } from '../editar-alumno-modal/editar-alumno
 })
 
 export class ContentAreaComponent {
+  buscar!: string;
   alumnos: Alumno[] = [
     {
       alumno: {
@@ -75,15 +78,21 @@ export class ContentAreaComponent {
   columnas: string[] = ['nombre', 'curso', 'comision', 'estado', 'acciones']
 
   constructor(
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private buscarAlum: BuscarAlumnoPipe,
   ) {
 
   }
+
 
   openModal(alumnos: Alumno) {
     const dialogRef = this.dialog.open(EditarAlumnoModalComponent, {
       data: alumnos,
     });
+  }
 
+
+  applyFilter() {
+    this.dataSource.data = this.buscarAlum.transform(this.alumnos, this.buscar);
   }
 }

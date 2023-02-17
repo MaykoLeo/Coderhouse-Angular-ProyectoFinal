@@ -1,32 +1,42 @@
+<div class="row">
+    <mat-form-field>
+        <mat-label>
+            <p>Buscar alumno</p>
+        </mat-label>
+        <input type="text" matInput [(ngModel)]="buscar" (input)="applyFilter()" placeholder="Search">
+    </mat-form-field>
+</div>
+
 <table mat-table [dataSource]="dataSource">
+
     <ng-container matColumnDef="nombre">
-        <th class="cabecera" mat-header-cell *matHeaderCellDef appLetraTamanio>Nombre</th>
+        <th class="centrado" mat-header-cell *matHeaderCellDef appLetraTamanio>Nombre</th>
         <td mat-cell *matCellDef="let element">{{ element.alumno | formatoApellidoNombre: element.alumno.nombre:
             element.alumno.apellido }}</td>
     </ng-container>
 
 
     <ng-container matColumnDef="curso">
-        <th class="cabecera" mat-header-cell *matHeaderCellDef appLetraTamanio>Curso</th>
+        <th class="centrado" mat-header-cell *matHeaderCellDef appLetraTamanio>Curso</th>
         <td mat-cell *matCellDef="let element">{{ element.curso }}</td>
     </ng-container>
 
 
     <ng-container matColumnDef="comision">
-        <th class="cabecera" mat-header-cell *matHeaderCellDef appLetraTamanio>Comisión</th>
-        <td mat-cell *matCellDef="let element">{{ element.comision }}</td>
+        <th class="centrado" mat-header-cell *matHeaderCellDef appLetraTamanio>Comisión</th>
+        <td class="centrado" mat-cell *matCellDef="let element">{{ element.comision }}</td>
     </ng-container>
 
     <ng-container matColumnDef="estado">
-        <th class="cabecera" mat-header-cell *matHeaderCellDef appLetraTamanio>Estado</th>
+        <th class="centrado" mat-header-cell *matHeaderCellDef appLetraTamanio>Estado</th>
         <td mat-cell *matCellDef="let element" [appEstadoEstilo]="element.alumno.estado">{{ element.alumno.estado |
             booleanoATexto: 'Activo': 'Inactivo' }}</td>
     </ng-container>
 
 
     <ng-container matColumnDef="acciones">
-        <th class="cabecera" mat-header-cell *matHeaderCellDef appLetraTamanio>Acciones</th>
-        <td mat-cell *matCellDef="let element">
+        <th class="centrado" mat-header-cell *matHeaderCellDef appLetraTamanio>Acciones</th>
+        <td class="centrado" mat-cell *matCellDef="let element">
             <button mat-icon-button color="primary" (click)="openModal(element)">
                 <mat-icon>edit</mat-icon>
             </button>
